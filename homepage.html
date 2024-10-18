@@ -1,62 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Education</title>
+    <meta name="viewport" content="width=1024"> <!-- Forces desktop width -->
+    <title> WordWave : The AI-Powered English Learning Platform </title>
     <link rel="stylesheet" href="homepage.css">
 </head>
+
 <body>
-<div class="content">
-    <header>
-        <nav>
-            <div class="logo">EduOnline</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#courses">Courses</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
+ <!-- Loader Container -->
+ <div id="preloader">
+    <div class="loader-box">
+        <span class="letter">W</span>
+        <span class="letter">o</span>
+        <span class="letter">r</span>
+        <span class="letter">d</span>
+        <span class="letter">W</span>
+        <span class="letter">a</span>
+        <span class="letter">v</span>
+        <span class="letter">e</span>
+    </div>
+</div>
+
+<div id="off-loader">
+        <!-- Menubar -->
+        <nav class="navbar">
+            <div class="logo"> 
+                <ul> 
+                    <li> <img src="logo.png" id="logo-img"> </li>
+                    <li> <span id="logo-text"> WordWave </span> </li>
+                </ul> 
+            </div>
+            <ul class="menu">
+                <li> <a href="#"> Home </a> </li>
+                <li class="submenu">
+                    <a href="#courses"> Courses </a>
+                    <ul class="dropdown">
+                        <li> <a href="../Grammar_lessons/words.html"> Grammar Lessons </a> </li>
+                        <li> <a href="#"> Vocabulary </a> </li>
+                        <li> <a href="#"> Reading Skills </a> </li>
+                        <li> <a href="#"> Writing Skills </a> </li>
+                    </ul>
+                </li>
+                <li class="submenu">
+                    <a href="#tools"> Tools </a>
+                    <ul class="dropdown">
+                        <li> <a href="#"> Word Dictionary </a> </li>
+                        <li> <a href="#"> Spell Checker </a> </li>
+                        <li> <a href="#"> Multi-Language Translator </a> </li>
+                        <li> <a href="../text_to_speech/index.html"> Text-to-Speech and Speech-to-Text Convertor </a> </li>
+                    </ul>
+                </li>
+                <li class="submenu">
+                    <a href="#tools"> Games </a>
+                    <ul class="dropdown">
+                        <li> <a href="../Games/Word-Guessing/index.html"> Word Guessing </a> </li>
+                        <li> <a href="../Games/Sentence-Correction/index.html"> Sentence Correction </a> </li>
+                        <li> <a href="../Games/Word-Completion/index.html"> Word Completion </a> </li>
+                        <li> <a href="../Games/Word-Search-Puzzle/index.html"> Word Search Puzzle </a> </li>
+                        <li> <a href="../Games/Typing-Test/index.html"> Typing Test </a> </li>
+                        <li> <a href="../Games/Sentence-Completion/index.html"> Sentence Completion </a> </li>
+                        <li> <a href="../Games/Quiz/index.html"> English Final Quiz </a> </li>
+                    </ul>
+                </li>
+                <li><a href="../About_Us/index.html"> About </a></li>
             </ul>
         </nav>
-        <div class="hero-section">
-            <h1>Welcome to EduOnline</h1>
-            <p>Unlock your potential with our online courses.</p>
-            <a href="#courses" class="btn">Explore Courses</a>
+
+<div class="content">
+    <div class="hero-section">
+                <h1> Welcome to WordWave ..... </h1>
+                <h2> The AI-Powered English Learning Platform </h2>
+                <h3 id="learn"> We help students of college to learn English in a professional way. We help them to convert English in their own natural way with fun activities to engage in.</h3>
+                <!-- <p> Embrace your English with our well-researched and dedicated resources</p> -->
+                <!-- <p id="free-fun"> free.fun.effective </p> -->
+                <div class="attractive-box">
+                    free. <span>fun.</span> effective.
+                </div>                
+                <a href="#section" class="btn"> Explore </a>
+    </div>
+
+<section id="section" class="section">
+        <h2> ----- Explore ----- </h2>
+        <div class="modules-list">
+            <div class="modules">
+                <i class="fa-solid fa-book"></i>
+                <h3> English Learning Courses </h3>
+                <p>
+                <ul>
+                    <li> Grammar Lessons </li>
+                    <li> Vocabulary </li>
+                    <li> Reading Skills </li>
+                    <li> Writing Skills </li>
+                    <li> Books </li>
+                </ul>
+                </p>
+            </div>
+            <div class="modules">
+                <i class="fa-solid fa-puzzle-piece"></i>
+                <h3> Fun Games </h3>
+                <p>
+                <ul>
+                    <li> <a href="../Games/Word-Guessing/index.html"> Word Guessing </a> </li>
+                        <li> <a href="../Games/Sentence-Correction/index.html"> Sentence Correction </a> </li>
+                        <li> <a href="../Games/Word-Completion/index.html"> Word Completion </a> </li>
+                        <li> <a href="../Games/Word-Search-Puzzle/index.html"> Word Search Puzzle </a> </li>
+                        <li> <a href="../Games/Typing-Test/index.html"> Typing Test </a> </li>
+                        <li> <a href="../Games/Sentence-Completion/index.html"> Sentence Completion </a> </li>
+                        <li> <a href="../Games/Quiz/index.html"> English Final Quiz </a> </li>
+                </ul>
+                </p>
+            </div>
+            <div class="modules">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <h3> General-Purpose Tools </h3>
+                <p>
+                <ul>
+                    <li> Word Dictionary </li>
+                    <li> Spell Checker </li>
+                    <li> Multi-Language Translator </li>
+                    <li> Text-to-Speech and Speech-to-Text Convertor </li>
+                </ul>
+                </p>
+            </div>
         </div>
-    </header>
+</section>
 
-    <section id="courses" class="section">
-        <h2>Our Courses</h2>
-        <div class="course-list">
-            <div class="course">
-                <h3>Web Development</h3>
-                <p>Learn HTML, CSS, JavaScript, and more.</p>
-            </div>
-            <div class="course">
-                <h3>Data Science</h3>
-                <p>Master Python, R, and Machine Learning.</p>
-            </div>
-            <div class="course">
-                <h3>Graphic Design</h3>
-                <p>Design stunning visuals and graphics.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="section">
-        <h2>About Us</h2>
-        <p>EduOnline is a platform dedicated to providing high-quality online education.</p>
-    </section>
-
-    <section id="contact" class="section">
-        <h2>Contact Us</h2>
-        <p>Email: info@eduonline.com | Phone: +123 456 7890</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 EduOnline. All rights reserved.</p>
-    </footer>
+<footer>
+    <p> &copy; 2024 WordWave . All rights reserved.</p>
+</footer>
 </div>
-    <script src="homepage.js"></script>
+</div>
+<script src="homepage.js"></script>
+<script src="https://kit.fontawesome.com/1a3dc80080.js" crossorigin="anonymous"></script>
 </body>
-</html>
+</html>#ff0000#fc2b2b

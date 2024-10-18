@@ -7,7 +7,16 @@ document.addEventListener('DOMContentLoaded', () => {
             link.classList.add('active');
         });
     });
-
-    // Example of adding more animations or interactivity
-    // You can use JS libraries like GSAP for more advanced animations
 });
+
+window.addEventListener('load', function () {
+    // Loader duration of 2 seconds (2000ms)
+    setTimeout(function () {
+        // Hide the preloader
+        document.getElementById('preloader').style.display = 'none';
+        
+        // Show the content
+        document.getElementById('off-loader').style.display = 'block';
+    }, 500); // 1 seconds
+});
+
